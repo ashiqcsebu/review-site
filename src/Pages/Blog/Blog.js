@@ -3,7 +3,7 @@ import React from "react";
 const Blog = () => {
     return (
 
-        <div className="mt-20 mb-">
+        <div className="mt-32 mb-20">
 
          <div tabIndex={1} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-xl font-medium">
