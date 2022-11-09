@@ -1,5 +1,5 @@
 import React from 'react';
-// import AboutUs from './Faq/Faq';
+ import Faq from './Faq/Faq';
 import Banner from './Banner/Banner';
 import Services from './Services/Services';
 
@@ -11,7 +11,7 @@ const Home = () => {
 
             <Services></Services>
 
-            {/* <AboutUs></AboutUs> */}
+             <Faq></Faq> 
         </div>
     );
 };
