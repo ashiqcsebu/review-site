@@ -7,12 +7,7 @@ import logo from '../../../assets/bookworm.png';
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
 
-    const handleLogOut = () => {
-        logOut()
-            .then()
-            .catch();
-    }
-
+   
 
     const menuItems = <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
@@ -24,7 +19,8 @@ const Header = () => {
                 <>
                     <li className='font-semibold'><Link to='/orders'>My Review</Link></li>
                     <li className='font-semibold'>
-                    <button onClick={ handleLogOut } className='btn-ghost'>Sign Out</button>
+                   
+                        <button onClick={ logOut } className='btn-ghost'>Sign Out</button> 
                     </li>
                 </>
                 :
