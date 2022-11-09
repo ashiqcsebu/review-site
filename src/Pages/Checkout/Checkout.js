@@ -14,7 +14,8 @@ const Checkout = () => {
         const email = user?.email || 'unregistered';
         const phone = form.phone.value;
         const message = form.message.value;
-
+        
+        var ts = new Date().getTime();
         const order = {
             service: _id,
             serviceName: title,
@@ -22,7 +23,8 @@ const Checkout = () => {
             customer: name,
             email,
             phone,
-            message
+            message,
+            ts,
         }
 
         // if(phone.length > 10){
