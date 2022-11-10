@@ -21,10 +21,7 @@ const AddService = () => {
             price: price,
             rating: rating,
             description: description,
-         
             ts
-
-
         }
 
         fetch('http://localhost:5000/addservices', {
@@ -46,57 +43,43 @@ const AddService = () => {
 
     return (
 
-        <div className="hero bg-base-200">
-            <div className="hero-content flex-col lg:flex-row-reverse">
-
-                <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                    <form onSubmit={handleAddService}>
-                        <div className="card-body">
-
-
-                     <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text"></span>
-                                </label>
-                    <input type="text" name='name' required placeholder="Enter Service name" className="input input-bordered" />
-
-                            </div>
-
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text"></span>
-                                </label>
-                            <input type="ling" name='img' required placeholder="Enter photoURL" className="input input-bordered" />
-                            </div>
-
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text"></span>
-                                </label>
-                                <input type="text" name='price'  required  placeholder="Enter price amount" className="input input-bordered" />
-                            </div>
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text"></span>
-                                </label>
-                                <input type="text" name='rating'  required  placeholder="Enter Rating" className="input input-bordered" />
-                            </div>
-
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text"></span>
-                                </label>
-                        <textarea className='border-4' name="description" placeholder='Write a description' id="" cols="30" rows="10"></textarea>
-                            </div>
-
-                            <button className="btn btn-accent">Add Service</button>
-
-                        </div>
-
-                    </form>
-                </div>
-            </div>
+<div className="hero bg-base-200">
+<div className="hero-content flex-col lg:flex-row-reverse ">
+<form onSubmit={handleAddService}>
+        <h2 className="text-4xl font-semibold text-cyan-600 mb-6">Add New Services </h2>
+       
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+     <input type="text" name='name' required placeholder="Enter Service name" className="input input-bordered  "/> <br></br>
+    <input type="ling" name='img' required placeholder="Enter photoURL" className="input input-bordered" /> <br />
+    <input type="text" name='price'  required  placeholder="Enter price amount" className="input input-bordered"/> <br />
+    <input type="text" name='rating'  required  placeholder="Enter Rating" className="input input-bordered" />
         </div>
+        <br />
+        <textarea className='border-4' name="description" placeholder='Write a description' id="" cols="50" rows="10"></textarea>
+      
+<br />
+<button className="btn btn-accent mt-6 bg-cyan-600">Submit</button>
+    </form>
+
+</div>
+
+</div>
+
+
+
+// https://i.ibb.co/0VNWTyX/CI.png
+// https://i.ibb.co/yXvDmVt/Angular.png
+// https://i.ibb.co/XSbF9yw/cs.jpg
+// https://i.ibb.co/mTpnt4z/Laravel.png
+// https://i.ibb.co/Zf4Qc5n/dJANGO.jpg
+// https://i.ibb.co/TDXDct0/MEAN.png
+// https://i.ibb.co/W55H3KR/MERN.jpg
+// https://i.ibb.co/XZ4hLqs/React.jpg
+// https://i.ibb.co/dP7wQbn/PHP.jpg
+
+
+
+       
     );
 };
 
