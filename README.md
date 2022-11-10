@@ -1,3 +1,50 @@
+## Book Worm ( An Online Based platform to review services of Technical Books and Courses)
+
+
+
+Description of project:
+Full Stack Web site based on MERN stack technology.
+
+* Any user can visit te side to see our services, read review of other users.
+* Logged in user can Add Services, leave Review.
+* Newly added three Services will be displayed on Home page.
+* All the services will be shown on Services paged. Newly added services will be on top based on sorting.
+* Unable to Access the add service or leave review option without sign in or log in.
+* Private route redirects to the login page if the user is not logged in.
+* Recently added review will be on top .
+* Dynamic Title in the title section using custom hook.
+
+## technologies
+
+* MERN (MongoDB, Express.js ,React Js ,Node.JS ) Stack
+* Tailwind CSS, DaisyUi
+* React Icon and react-route-dom
+* Firebase for user authentication
+
+## Server Side code live link
+
+
+
+## Client Side code live link
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
