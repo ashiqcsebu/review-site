@@ -67,16 +67,6 @@ const AddService = () => {
 
 
 
-// https://i.ibb.co/0VNWTyX/CI.png
-// https://i.ibb.co/yXvDmVt/Angular.png
-// https://i.ibb.co/XSbF9yw/cs.jpg
-// https://i.ibb.co/mTpnt4z/Laravel.png
-// https://i.ibb.co/Zf4Qc5n/dJANGO.jpg
-// https://i.ibb.co/TDXDct0/MEAN.png
-// https://i.ibb.co/W55H3KR/MERN.jpg
-// https://i.ibb.co/XZ4hLqs/React.jpg
-// https://i.ibb.co/dP7wQbn/PHP.jpg
-
 
 
        
