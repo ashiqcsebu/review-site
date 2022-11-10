@@ -12,6 +12,7 @@ Full Stack Web site based on MERN stack technology.
 * Unable to Access the add service or leave review option without sign in or log in.
 * Private route redirects to the login page if the user is not logged in.
 * Recently added review will be on top .
+* Service Card Photo will be auto zoom in if clicekd.
 * Dynamic Title in the title section using custom hook.
 
 ## technologies
@@ -21,12 +22,11 @@ Full Stack Web site based on MERN stack technology.
 * React Icon and react-route-dom
 * Firebase for user authentication
 
-## Server Side code live link
+## Server Side  live link
+https://service-review-server-side-rouge.vercel.app/
 
-
-
-## Client Side code live link
-
+## Client Side live link
+https://service-review-c7a94.web.app/
 
 
 
