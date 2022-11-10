@@ -17,7 +17,7 @@ const Header = () => {
         {
             user?.email ?
                 <>
-                    <li className='font-semibold'><Link to='/orders'>My Review</Link></li>
+                    <li className='font-semibold'><Link to='/Myreviews'>My Review</Link></li>
                     <li className='font-semibold'>
                    
                         <button onClick={ logOut } className='btn-ghost'>Sign Out</button> 
@@ -57,7 +57,7 @@ const Header = () => {
 
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
-                    {/* {menuItems} */}
+               
                 </ul>
             </div>
             <div className="navbar-end hidden lg:flex">
@@ -65,8 +65,6 @@ const Header = () => {
             <ul className="menu menu-horizontal p-0">
                      {menuItems} 
                 </ul>
-            {/* {menuItems} */}
-           
             </div>
         </div>
     );

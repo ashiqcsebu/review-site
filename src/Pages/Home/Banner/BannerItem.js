@@ -14,10 +14,7 @@ const BannerItem = ({slide}) => {
                       it brings people together.     
                     </h1>
                 </div>
-                {/* <div className="absolute flex justify-end transform -translate-y-1/2  left-1/4 right-1/4 top-1/2">
-                    <p className='text-3xl text-white'>If future generations are to remember us more with gratitude than sorrow, we must achieve more than just the miracles of technology.</p>
-                </div> */}
-                
+               
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href={`#slide${prev}`} className="btn btn-circle mr-5">❮</a>
                     <a href={`#slide${next}`} className="btn btn-circle">❯</a>

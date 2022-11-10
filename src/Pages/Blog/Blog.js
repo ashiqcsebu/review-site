@@ -5,8 +5,8 @@ const Blog = () => {
     UseTitle('Blog')
     return (
 
-        <div className="mt-32 mb-20">
-
+        <div className="mt-6 mb-2">
+    <h2 className="mb-8 text-4xl tracking-tight font-bold text-center text-cyan-600">Few Questions that Every Tech Enthusisast Must Know</h2>
          <div tabIndex={1} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-xl font-medium">
                     Difference between SQL and NoSQL

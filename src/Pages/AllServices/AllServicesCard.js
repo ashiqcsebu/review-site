@@ -17,7 +17,7 @@ const AllServicesCard = ({service}) => {
                         description.length > 100 ?
                             <>
                             {description.slice(0, 100) + '...'} 
-                            {/* <Link to={`/research/${_id}`} className='see-more fw-bold'> Click Here to Read More or Enroll</Link>  */}
+                          
                             </>
                             :
                             description

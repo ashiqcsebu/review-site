@@ -44,31 +44,39 @@ const AddService = () => {
 
     return (
 
-<div className="hero bg-base-200">
-<div className="hero-content flex-col lg:flex-row-reverse ">
-<form onSubmit={handleAddService}>
-        <h2 className="text-4xl font-semibold text-cyan-600 mb-6">Add New Services </h2>
-       
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
-     <input type="text" name='name' required placeholder="Enter Service name" className="input input-bordered  "/> <br></br>
-    <input type="ling" name='img' required placeholder="Enter photoURL" className="input input-bordered" /> <br />
-    <input type="text" name='price'  required  placeholder="Enter price amount" className="input input-bordered"/> <br />
-    <input type="text" name='rating'  required  placeholder="Enter Rating" className="input input-bordered" />
+        <section className="my-12 bg-base-200 rounded-lg">
+        <div className="py-6 lg:py-4 px-4 mx-auto max-w-screen-md">
+            <h2 className="mb-4 text-5xl tracking-tight font-bold text-center text-cyan-600">Add New Services</h2>
+          
+            <form onSubmit={handleAddService} className="space-y-4">
+                <div>
+                    <label for="name" className="block mb-2 text-xl font-semibold text-gray-900 ">Enter Title</label>
+                    <input type="text" id="name" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-base-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Type Service Title" required/>
+                </div>
+
+                <div>
+                <label for="img" className="block mb-2 text-xl font-semibold text-gray-900 ">Enter Photo url</label>
+                    <input type="ling" id="img" className="block p-3 w-full text-sm text-dark bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-base-700 dark:border-base-600 dark:placeholder-gray-400 text-dark dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Enter Photo URL" required/>
+                </div>
+
+
+                <div>
+                    <label for="price" className="block mb-2 text-xl font-semibold text-gray-900 ">Enter Price</label>
+                    <input type="text" name="price" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-base-700 dark:border-gray-600 dark:placeholder-gray-400 text-dark dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Enter Service Price" required/>
+                </div>
+                <div>
+                    <label for="rating" className="block mb-2 text-xl font-semibold text-gray-900 ">Enter Rating</label>
+                    <input type="text" name="rating" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-base-700 dark:border-gray-600 dark:placeholder-gray-400 text-dark dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Type Rating " required/>
+                </div>
+
+                <div className="sm:col-span-2">
+                <label for="description" className="block mb-2 text-xl font-semibold text-gray-900 ">Write Short Description</label>
+                    <textarea  rows="6" name="description" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-base-700  dark:placeholder-gray-400 text-dark dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Short Description"></textarea>
+                </div>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-cyan-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Add Service</button>
+            </form>
         </div>
-        <br />
-        <textarea className='border-4' name="description" placeholder='Write a description' id="" cols="50" rows="10"></textarea>
-      
-<br />
-<button className="btn btn-accent mt-6 bg-cyan-600">Submit</button>
-    </form>
-
-</div>
-
-</div>
-
-
-
-
+      </section>
 
        
     );
