@@ -1,8 +1,9 @@
 import React from 'react';
-// import UseTitle from '../../Hooks/UseTitle';
+import UseTitle from '../../UseTitle/UseTitle';
+
 
 const AddService = () => {
-    // UseTitle('service')
+   UseTitle('AddServices')
 
     const handleAddService = event => {
 

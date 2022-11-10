@@ -3,8 +3,10 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import ServiceCard from './ServiceCard';
 import { Link } from 'react-router-dom';
+import UseTitle from '../../../UseTitle/UseTitle';
 
 const Services = () => {
+    UseTitle('Services-BookWorm')
     const [services, setServices] = useState([]);
     useEffect( () =>{
         fetch('http://localhost:5000/services')

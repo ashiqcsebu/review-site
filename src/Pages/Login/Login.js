@@ -3,7 +3,9 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
 import img from '../../assets/images/login/login.svg';
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
+import UseTitle from "../../UseTitle/UseTitle";
 const Login = () => {
+    UseTitle('Login')
       
     const location = useLocation();
     const navigate = useNavigate();
@@ -87,9 +89,9 @@ const Login = () => {
                             <input className="btn btn-primary" type="submit" value="Login" />
                         </div>
                     </form>
-                    <div className="flex justify-center">
-                     <p  className="text-2xl font-semibold ">Log in With  </p>
-                     <p className="text-3xl text-center"> <FcGoogle onClick={handleGoogle} />  </p>   
+                    <div className="flex justify-center ">
+                     <p  className="text-2xl font-semibold">Log in With  </p>
+                     <button className="text-3xl text-center bg-sky-300 p-1 mx-2"> <FcGoogle onClick={handleGoogle} />  </button>   
                     </div>
                  
                     <p className='text-center  text-2xl'>New to Book Worm? <Link className='text-orange-600 font-bold' to="/signup">Sign Up</Link> </p>
