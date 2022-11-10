@@ -29,6 +29,14 @@ const router = createBrowserRouter([
           path: '/signup', 
           element: <SignUp></SignUp>
         },
+        {
+          path: '/services',
+          element: <AllServices> </AllServices>
+       },
+       {
+        path: '/blog',
+        element: <Blog> </Blog>
+      },
          {
           path: '/services/:id',
           element:<Details> </Details> ,
@@ -48,16 +56,9 @@ const router = createBrowserRouter([
               element :<EditeReview></EditeReview>,
               loader : ({params}) => fetch(`http://localhost:5000/edite/${params.id}`)
 
-            },
+         },
 
-        {
-          path: '/services',
-          element: <AllServices> </AllServices>
-      },
-      {
-        path: '/blog',
-        element: <Blog> </Blog>
-    },
+     
       ]
     }
   ]);

@@ -13,7 +13,7 @@ const PrivateRoute = ({children}) => {
                  </svg>
          Processing...
       </button>
-        // return <h1 className='text-5xl'>Loading...</h1>
+     
     }
 
     if(user){

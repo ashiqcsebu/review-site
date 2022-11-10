@@ -6,9 +6,6 @@ import logo from '../../../assets/bookworm.png';
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
-
-   
-
     const menuItems = <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
         <li className='font-semibold'><Link to='/services'>Services</Link></li>
@@ -28,10 +25,6 @@ const Header = () => {
             } 
        
              </>
-
-    
-      
-
 
     return (
         <div className="navbar h-20 mb-6 pt-6 pb-10 bg-base-200">

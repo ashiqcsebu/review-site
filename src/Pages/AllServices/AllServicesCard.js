@@ -1,12 +1,21 @@
 import React from 'react';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { Link } from 'react-router-dom';
+import 'react-photo-view/dist/react-photo-view.css';
 
 const AllServicesCard = ({service}) => {
     
     const {_id , img, price, service_name ,rating , description} = service;
     return (
+
+        <PhotoProvider>   
         <div className="card card-compact w-96 bg-base-100 shadow-xl ">
-           <figure><img className='h-56 w-full' src={img} alt="" /></figure>
+           <figure>
+           <PhotoView src= {img}> 
+        <img src={img} className="h-full w-11/12 rounded-xl" alt="Shoes" />
+          </PhotoView>
+            
+            </figure>
             <div className="card-body">
             <h2 className="card-title text-2xl font-semibold">{service_name}</h2>
             <h2 className='text-xl text-orange-600 font-semibold'>Price: ${price}</h2>
@@ -32,6 +41,7 @@ const AllServicesCard = ({service}) => {
                 </div>
             </div>
         </div>
+        </PhotoProvider>
     );
 };
 
